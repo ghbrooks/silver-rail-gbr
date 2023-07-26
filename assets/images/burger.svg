@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="21px" viewBox="0 0 36 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>burger</title>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="DESKTOP/ALL/Navigation-burger-white-Copy" transform="translate(-1325.000000, -19.000000)" stroke="#002D30" stroke-width="3">
+            <g id="burger" transform="translate(1325.000000, 20.000000)">
+                <line x1="35.0128348" y1="0.5" x2="9" y2="0.5" id="Path-2"></line>
+                <line x1="26.0128348" y1="18.5" x2="-1.13686838e-13" y2="18.5" id="Path-2-Copy"></line>
+                <line x1="31.0128348" y1="9.5" x2="5" y2="9.5" id="Path-2-Copy-2"></line>
+            </g>
+        </g>
+    </g>
+</svg>

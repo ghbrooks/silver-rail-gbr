@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+
+.nav-container {
+  
+
+  .mainNav {
+    .mainNav_top {
+      
+      li {
+       
+        a {
+          text-decoration: none;
+          color: #000000;
+          display: inline-block;
+          line-height: 2em;
+          border-bottom: 2px solid;
+          border-bottom-color: transparent;
+          color: #000;
+          -webkit-text-decoration: none;
+          text-decoration: none;
+          &:active,
+          &:hover {
+            border-bottom-color: #00bb75;
+            color: #00bb75;
+          }
+        }
+      }
+    }
+  }
+  button {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 20px 40px;
+    .logo {
+      width: 160px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+    .mainNav {
+      display: none;
+    }
+    button {
+      display: inline-block;
+      background: transparent;
+      border: none;
+    }
+  }
+  @media (max-width: 576px) {
+  }
+}
+
+.sub_menu:hover {
+  display: block;
+}
+
+.sub_menu {
+  position: absolute;
+  background: #ffffff;
+  padding: 20px 0 0 0;
+  margin: 0;
+  width: max-content;
+  display: none;
+  &_item:hover + .sub_menu {
+    display: block;
+  }
+}
+
+.nav-mobile {
+  // display: none;
+  z-index: 20;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 45, 48);
+  .mob-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    .logo_white {
+      width: 40vw;
+      min-width: 120px;
+      max-width: 195px;
+    }
+    button {
+      .arrow {
+        fill: #fff;
+        color: #fff;
+        scale: 1.5;
+      }
+      background: transparent;
+      border: none;
+    }
+  }
+  .main-Nav-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    width: 92%;
+    ul {
+      li {
+        padding-bottom: 25px;
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: calc(15px + 5vw);
+        }
+        .arrow_mob {
+          background: transparent;
+          border: none;
+        }
+        ul a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  // @media (max-width: 768px) {
+  //   display: block;
+  // }
+}
